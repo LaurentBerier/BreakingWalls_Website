@@ -10,7 +10,6 @@
       var open = burger.getAttribute("aria-expanded") === "true";
       burger.setAttribute("aria-expanded", String(!open));
       mobile.hidden = open;
-      mobile.style.zIndex = open ? "-1" : "-1";
       document.body.style.overflow = open ? "" : "hidden";
     });
   }
@@ -75,13 +74,16 @@
     els.forEach(function (el) { el.classList.add("is-in"); });
   }
 
-  // Language switch (Weglot, if enabled)
-  document.querySelectorAll("[data-lang] button").forEach(function (b) {
-    if (!window.Weglot) return;
-    var set = function () { b.textContent = (Weglot.getCurrentLang() === "fr") ? "FR" : "EN"; };
-    Weglot.on && Weglot.on("initialized", set);
-    Weglot.on && Weglot.on("languageChanged", set);
-    b.addEventListener("click", function () { Weglot.switchTo(Weglot.getCurrentLang() === "fr" ? "en" : "fr"); });
+  // Language switcher dropdown
+  document.querySelectorAll(".lang > button").forEach(function (b) {
+    b.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = b.parentElement.classList.toggle("open");
+      b.setAttribute("aria-expanded", String(open));
+    });
+  });
+  document.addEventListener("click", function () {
+    document.querySelectorAll(".lang.open").forEach(function (l) { l.classList.remove("open"); l.firstElementChild.setAttribute("aria-expanded", "false"); });
   });
 
   // Contact form: posts to the endpoint set in FORM_ENDPOINT (see README). Falls back to email.
@@ -94,12 +96,12 @@
       if (!FORM_ENDPOINT) {
         var body = [];
         data.forEach(function (v, k) { body.push(k + ": " + v); });
-        location.href = "mailto:" + FALLBACK_EMAIL + "?subject=" + encodeURIComponent("Website contact") + "&body=" + encodeURIComponent(body.join("\n"));
+        location.href = "mailto:" + FALLBACK_EMAIL + "?subject=" + encodeURIComponent(document.documentElement.lang.indexOf("fr") === 0 ? "Contact site web" : "Website contact") + "&body=" + encodeURIComponent(body.join("\n"));
         return;
       }
       fetch(FORM_ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } })
         .then(function (r) { if (!r.ok) throw r; f.querySelectorAll("label, button").forEach(function (x) { x.hidden = true; }); f.querySelector(".cform-ok").hidden = false; })
-        .catch(function () { alert("Sorry, the message could not be sent. Please email " + FALLBACK_EMAIL); });
+        .catch(function () { alert((document.documentElement.lang.indexOf("fr") === 0 ? "Désolé, le message n'a pas pu être envoyé. Écrivez-nous à " : "Sorry, the message could not be sent. Please email ") + FALLBACK_EMAIL); });
     });
   });
 })();

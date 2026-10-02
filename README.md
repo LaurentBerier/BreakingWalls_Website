@@ -17,6 +17,9 @@ site/                 <- the website. Publish this folder as-is.
   assets/fonts/       Poppins + Epilogue (self-hosted, SIL OFL)
   404.html robots.txt sitemap.xml _redirects
 tools/build.py        one-time converter: Squarespace capture -> site/
+tools/i18n.py         builds site/fr/ from i18n/fr.json + adds the language switcher
+i18n/fr.json          French translations (edit here)
+Preview site.command  double-click to preview the site locally on a Mac
 ```
 
 `_capture/` (raw Squarespace export, ~800 MB) and `_work/` are kept locally but
@@ -48,9 +51,12 @@ Any static host works. Point it at the `site/` folder, no build command.
    the visitor's email app (to info@breakingwalls.co) as a fallback. For a real
    form, create a free endpoint (Formspree, Basin, or Netlify Forms) and paste
    its URL into `FORM_ENDPOINT` at the bottom of `site/assets/js/site.js`.
-2. **French version.** The live site used Squarespace's built-in Weglot
-   switcher, and only headings/menus were translated. That integration goes
-   away with Squarespace, so the rebuild is English only.
+2. **French version.** Done: every page has a French copy under `/fr/`
+   (e.g. /fr/about), with the English/Français switcher in the header.
+   Translations live in `i18n/fr.json` (English -> French, HTML kept). To fix
+   wording, edit that file and run `python3 tools/i18n.py apply`. After adding
+   or changing English text, run `python3 tools/i18n.py extract` first to see
+   which strings need a translation.
 3. **Domain / DNS.** Find out where breakingwalls.co is registered (Squarespace
    Domains or elsewhere). If it is at Squarespace, transfer it out *before*
    cancelling, or the site and any email on that domain can break.

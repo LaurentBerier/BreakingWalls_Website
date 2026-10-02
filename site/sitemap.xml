@@ -1,29 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.breakingwalls.co/</loc></url>
-  <url><loc>https://www.breakingwalls.co/about</loc></url>
-  <url><loc>https://www.breakingwalls.co/away-faqs-support</loc></url>
-  <url><loc>https://www.breakingwalls.co/away-press</loc></url>
-  <url><loc>https://www.breakingwalls.co/away-the-survival-series</loc></url>
-  <url><loc>https://www.breakingwalls.co/blog</loc></url>
-  <url><loc>https://www.breakingwalls.co/blog/a-canadian-game-sale</loc></url>
-  <url><loc>https://www.breakingwalls.co/blog/christmas-chaos-arrives-in-go-boom-our-new-project-from-breaking-walls-labs</loc></url>
-  <url><loc>https://www.breakingwalls.co/blog/the-sugar-glider-time-trial-challenge</loc></url>
-  <url><loc>https://www.breakingwalls.co/blog/welcome</loc></url>
-  <url><loc>https://www.breakingwalls.co/bwlabs</loc></url>
-  <url><loc>https://www.breakingwalls.co/careers</loc></url>
-  <url><loc>https://www.breakingwalls.co/disruption</loc></url>
-  <url><loc>https://www.breakingwalls.co/faqs-1</loc></url>
-  <url><loc>https://www.breakingwalls.co/foldandfly</loc></url>
-  <url><loc>https://www.breakingwalls.co/foldandflypress</loc></url>
-  <url><loc>https://www.breakingwalls.co/gifs</loc></url>
-  <url><loc>https://www.breakingwalls.co/goboom</loc></url>
-  <url><loc>https://www.breakingwalls.co/home</loc></url>
-  <url><loc>https://www.breakingwalls.co/news</loc></url>
-  <url><loc>https://www.breakingwalls.co/news/away-on-xbox</loc></url>
-  <url><loc>https://www.breakingwalls.co/news/indie-game-of-the-month</loc></url>
-  <url><loc>https://www.breakingwalls.co/news/new-projects</loc></url>
-  <url><loc>https://www.breakingwalls.co/news/upcoming-patch-on-away</loc></url>
-  <url><loc>https://www.breakingwalls.co/privacy-policy</loc></url>
-  <url><loc>https://www.breakingwalls.co/venus</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.breakingwalls.co/about</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/about"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/about"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/about</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/about"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/about"/></url>
+  <url><loc>https://www.breakingwalls.co/away-faqs-support</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/away-faqs-support"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/away-faqs-support"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/away-faqs-support</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/away-faqs-support"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/away-faqs-support"/></url>
+  <url><loc>https://www.breakingwalls.co/away-press</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/away-press"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/away-press"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/away-press</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/away-press"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/away-press"/></url>
+  <url><loc>https://www.breakingwalls.co/away-the-survival-series</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/away-the-survival-series"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/away-the-survival-series"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/away-the-survival-series</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/away-the-survival-series"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/away-the-survival-series"/></url>
+  <url><loc>https://www.breakingwalls.co/blog/a-canadian-game-sale</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/blog/a-canadian-game-sale"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/blog/a-canadian-game-sale"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/blog/a-canadian-game-sale</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/blog/a-canadian-game-sale"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/blog/a-canadian-game-sale"/></url>
+  <url><loc>https://www.breakingwalls.co/blog/christmas-chaos-arrives-in-go-boom-our-new-project-from-breaking-walls-labs</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/blog/christmas-chaos-arrives-in-go-boom-our-new-project-from-breaking-walls-labs"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/blog/christmas-chaos-arrives-in-go-boom-our-new-project-from-breaking-walls-labs"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/blog/christmas-chaos-arrives-in-go-boom-our-new-project-from-breaking-walls-labs</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/blog/christmas-chaos-arrives-in-go-boom-our-new-project-from-breaking-walls-labs"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/blog/christmas-chaos-arrives-in-go-boom-our-new-project-from-breaking-walls-labs"/></url>
+  <url><loc>https://www.breakingwalls.co/blog</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/blog"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/blog"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/blog</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/blog"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/blog"/></url>
+  <url><loc>https://www.breakingwalls.co/blog/the-sugar-glider-time-trial-challenge</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/blog/the-sugar-glider-time-trial-challenge"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/blog/the-sugar-glider-time-trial-challenge"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/blog/the-sugar-glider-time-trial-challenge</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/blog/the-sugar-glider-time-trial-challenge"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/blog/the-sugar-glider-time-trial-challenge"/></url>
+  <url><loc>https://www.breakingwalls.co/blog/welcome</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/blog/welcome"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/blog/welcome"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/blog/welcome</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/blog/welcome"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/blog/welcome"/></url>
+  <url><loc>https://www.breakingwalls.co/bwlabs</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/bwlabs"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/bwlabs"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/bwlabs</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/bwlabs"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/bwlabs"/></url>
+  <url><loc>https://www.breakingwalls.co/careers</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/careers"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/careers"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/careers</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/careers"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/careers"/></url>
+  <url><loc>https://www.breakingwalls.co/disruption</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/disruption"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/disruption"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/disruption</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/disruption"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/disruption"/></url>
+  <url><loc>https://www.breakingwalls.co/faqs-1</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/faqs-1"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/faqs-1"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/faqs-1</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/faqs-1"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/faqs-1"/></url>
+  <url><loc>https://www.breakingwalls.co/foldandfly</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/foldandfly"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/foldandfly"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/foldandfly</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/foldandfly"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/foldandfly"/></url>
+  <url><loc>https://www.breakingwalls.co/foldandflypress</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/foldandflypress"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/foldandflypress"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/foldandflypress</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/foldandflypress"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/foldandflypress"/></url>
+  <url><loc>https://www.breakingwalls.co/gifs</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/gifs"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/gifs"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/gifs</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/gifs"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/gifs"/></url>
+  <url><loc>https://www.breakingwalls.co/goboom</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/goboom"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/goboom"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/goboom</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/goboom"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/goboom"/></url>
+  <url><loc>https://www.breakingwalls.co/home</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/home"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/home"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/home</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/home"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/home"/></url>
+  <url><loc>https://www.breakingwalls.co/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/"/></url>
+  <url><loc>https://www.breakingwalls.co/news/away-on-xbox</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/news/away-on-xbox"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/news/away-on-xbox"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/news/away-on-xbox</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/news/away-on-xbox"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/news/away-on-xbox"/></url>
+  <url><loc>https://www.breakingwalls.co/news</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/news"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/news"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/news</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/news"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/news"/></url>
+  <url><loc>https://www.breakingwalls.co/news/indie-game-of-the-month</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/news/indie-game-of-the-month"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/news/indie-game-of-the-month"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/news/indie-game-of-the-month</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/news/indie-game-of-the-month"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/news/indie-game-of-the-month"/></url>
+  <url><loc>https://www.breakingwalls.co/news/new-projects</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/news/new-projects"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/news/new-projects"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/news/new-projects</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/news/new-projects"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/news/new-projects"/></url>
+  <url><loc>https://www.breakingwalls.co/news/upcoming-patch-on-away</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/news/upcoming-patch-on-away"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/news/upcoming-patch-on-away"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/news/upcoming-patch-on-away</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/news/upcoming-patch-on-away"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/news/upcoming-patch-on-away"/></url>
+  <url><loc>https://www.breakingwalls.co/privacy-policy</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/privacy-policy"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/privacy-policy"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/privacy-policy</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/privacy-policy"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/privacy-policy"/></url>
+  <url><loc>https://www.breakingwalls.co/venus</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/venus"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/venus"/></url>
+  <url><loc>https://www.breakingwalls.co/fr/venus</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.breakingwalls.co/venus"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.breakingwalls.co/fr/venus"/></url>
 </urlset>

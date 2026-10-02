@@ -160,7 +160,6 @@ hr { border: 0; border-top: 1px solid currentColor; opacity: .4; width: 100%; }
 .hd-logo img { height: 40px; width: auto; }
 .hd-actions { justify-self: end; display: flex; align-items: center; gap: 1.2em; }
 .hd-actions .soc { width: 16px; height: 16px; }
-.lang button { background: none; border: 1px solid currentColor; color: inherit; border-radius: 4px; padding: .1em .5em; cursor: pointer; font-size: .85rem; }
 .hd-burger { display: none; background: none; border: 0; width: 32px; height: 32px; position: relative; cursor: pointer; color: inherit; justify-self: end; }
 .hd-burger span { position: absolute; left: 4px; right: 4px; height: 1px; background: currentColor; transition: transform .25s; }
 .hd-burger span:first-child { top: 12px; } .hd-burger span:last-child { top: 19px; }
@@ -301,3 +300,20 @@ hr { border: 0; border-top: 1px solid currentColor; opacity: .4; width: 100%; }
 /* ---------- footer ---------- */
 .site-footer .sec-in { padding-top: 3vmax; padding-bottom: 3vmax; }
 
+
+/* ---------- language switcher ---------- */
+.lang { position: relative; }
+.lang > button { display: inline-flex; align-items: center; gap: .35em; background: none; border: 0; color: inherit; cursor: pointer; font-size: .95rem; padding: .2em 0; }
+.lang-ico { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1.3; }
+.lang-chev { width: .65em; height: .4em; fill: none; stroke: currentColor; stroke-width: 1.2; }
+.lang-menu { position: absolute; right: 0; top: 100%; margin: .4em 0 0; padding: .5em 0; list-style: none; min-width: 9em; background: hsl(213 5% 51% / .95); color: var(--white); border-radius: 6px; display: none; z-index: 60; }
+.lang.open .lang-menu { display: block; }
+.lang-menu a { display: block; padding: .35em 1em; text-decoration: none; color: inherit; }
+.lang-menu a:hover, .lang-menu a[aria-current] { background: hsl(0 0% 100% / .12); }
+.lang-mobile { margin-top: 1.5em; font-size: 1.2rem; }
+.lang-mobile > button { color: var(--white); font-size: inherit; }
+.lang-mobile .lang-menu { position: static; background: none; padding: .3em 0 0 1.4em; margin: 0; font-size: 1.1rem; min-width: 0; }
+.lang-mobile .lang-menu li { margin: .1em 0; }
+.lang-mobile .lang-menu a { padding: .25em 0; }
+.lang-mobile .lang-menu a:hover, .lang-mobile .lang-menu a[aria-current] { background: none; text-decoration: underline; }
+.lang-float { position: fixed; top: 14px; right: 4vw; z-index: 60; color: var(--white); text-shadow: 0 1px 3px hsl(0 0% 0% / .5); }
