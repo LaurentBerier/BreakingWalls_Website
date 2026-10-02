@@ -1,0 +1,3 @@
+/blog/category/*  /blog  301
+/blog/tag/*  /blog  301
+/games  /home  301

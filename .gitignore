@@ -1,0 +1,5 @@
+_capture/
+_work/
+*.zip
+.DS_Store
+*.tmp*
