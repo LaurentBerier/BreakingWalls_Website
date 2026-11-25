@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "site",
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/blog/category/:path*", "destination": "/blog", "permanent": true },
+    { "source": "/blog/tag/:path*", "destination": "/blog", "permanent": true },
+    { "source": "/games", "destination": "/home", "permanent": true }
+  ]
+}
