@@ -1,6 +1,6 @@
 # Breaking Walls website
 
-Static rebuild of www.breakingwalls.co, migrated off Squarespace (October 2026).
+Static rebuild of www.breakingwalls.co. The October Squarespace capture is preserved, and the November 2026 local version adds the Simulation and Robotics content to the same site.
 Plain HTML/CSS/JS, no framework, no build step needed to publish.
 
 ## Layout
@@ -25,6 +25,14 @@ Preview site.command  double-click to preview the site locally on a Mac
 `_capture/` (raw Squarespace export, ~800 MB) and `_work/` are kept locally but
 not in git. You only need them to re-run `tools/build.py`. From now on, edit the
 files in `site/` directly.
+
+## Unified site
+
+- The bilingual portal `/` and `/fr/` lead to the existing Games portfolio (`/home`, `/fr/home`) or Simulation (`/simulation/`, `/fr/simulation/`).
+- Robotics lives at `/simulation/robotics/` and `/fr/simulation/robotics/`. The public Simulation content is adapted from the separate Breaking Walls .ca site's main and Robotics pages. The old React app is not deployed by this repository.
+- Edit the managed page copy in `tools/unify_site.py` and run `python3 tools/unify_site.py`. The existing translation command also regenerates those pages after refreshing the games translations.
+- Publish only `site/` on the new host, preserving existing Games, support, and press URLs. Once the unified .co site is live on HTTPS, configure permanent redirects for the former .ca website: `/` to `https://www.breakingwalls.co/simulation/`, and `/robotics` to `https://www.breakingwalls.co/simulation/robotics/`. Configure these at the .ca host, not in the .co site. Preserve .ca mail records, and do not redirect separate apps or subdomains as part of this change. The simulation contact still uses `info@breakingwalls.ca`.
+- Verify both locales, the old press/support URLs, the .ca redirects and the contact email after the host switch. The repo makes no DNS, hosting or mail changes.
 
 ## Preview locally
 
@@ -58,8 +66,7 @@ Any static host works. Point it at the `site/` folder, no build command.
    or changing English text, run `python3 tools/i18n.py extract` first to see
    which strings need a translation.
 3. **Domain / DNS.** Find out where breakingwalls.co is registered (Squarespace
-   Domains or elsewhere). If it is at Squarespace, transfer it out *before*
-   cancelling, or the site and any email on that domain can break.
+   Domains or elsewhere). Check the domain renewal and DNS separately from website hosting; keep existing mail records intact.
 4. **Email.** If @breakingwalls.co mail (Google Workspace, etc.) is billed
    through Squarespace, move that subscription first. MX records must be
    copied to the new DNS.

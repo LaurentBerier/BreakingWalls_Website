@@ -72,7 +72,7 @@ def attr_strings(soup):
 
 def en_pages():
     for f in sorted(SITE.rglob("index.html")):
-        if FR in f.parents:
+        if FR in f.parents or f == SITE / "index.html" or SITE / "simulation" in f.parents:
             continue
         yield f
 
@@ -187,7 +187,8 @@ def apply():
         out.write_text(str(soup))
 
     # sitemap with both languages
-    urls = []
+    portal = f'<xhtml:link rel="alternate" hreflang="en" href="{SITE_URL}/"/><xhtml:link rel="alternate" hreflang="fr" href="{SITE_URL}/fr/"/>'
+    urls = [f"  <url><loc>{SITE_URL}{p}</loc>{portal}</url>" for p in ("/", "/fr/")]
     for f in en_pages():
         p = page_path(f)
         if p == "/breakingwalls":
@@ -199,6 +200,9 @@ def apply():
         urls.append(f"  <url><loc>{SITE_URL}{frp}</loc>{alt}</url>")
     (SITE / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
                                       'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + "\n".join(urls) + "\n</urlset>\n")
+    # The studio portal and simulation pages have native bilingual copy.
+    from unify_site import apply as apply_studio
+    apply_studio()
     n = len(list(FR.rglob("index.html")))
     print(f"{n} French pages written to site/fr/")
     if missing:
