@@ -89,12 +89,15 @@ def apply():
   simpage+=section('capabilities','Capabilities' if lang=='en' else 'Expertises',cards(areaItems[:3]))
   simpage+=section('sandscape',platTitle,cards(platforms,'bw-grid bw-two'))
   simpage+=section('projects',projTitle,cards([(t,p,loc(lang,url)) for t,p,url in projects]))+section('games', v['nav'][1], f'<a class="bw-link" href="{loc(lang,"home")}">{v["doors"][0][3]}</a>')+contact
-  write(lang,'simulation/',shell(lang,'simulation/',v['nav'][2],v['sim'][2],simpage))
+  # English simulation routes are supplied by the checked-in Vite bundle.
+  if lang != 'en':
+   write(lang,'simulation/',shell(lang,'simulation/',v['nav'][2],v['sim'][2],simpage))
   rob=hero(v['robot'],B+'robotics-hero.jpg','#contact',loc(lang,'simulation/'))
   rob+=section('pipeline',v['pipeline'][0],cards(v['pipeline'][1]))
   rob+=section('formats',v['outputs'][0],f'<img class="bw-inline-image" src="{B}robotics-mocap.jpg" alt="" loading="lazy" width="1344" height="768">'+cards(v['outputs'][1]))
   rob+=section('applications',v['uses'][0],f'<p class="bw-intro">{v["uses"][1]}</p>')+contact
-  write(lang,'simulation/robotics/',shell(lang,'simulation/robotics/',v['nav'][3],v['robot'][2],rob))
+  if lang != 'en':
+   write(lang,'simulation/robotics/',shell(lang,'simulation/robotics/',v['nav'][3],v['robot'][2],rob))
   # Add direct cross-navigation without changing game URLs or page content.
   file=out(lang,'home');h=file.read_text()
   href=loc(lang,'simulation/')

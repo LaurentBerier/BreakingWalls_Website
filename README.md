@@ -29,8 +29,8 @@ files in `site/` directly.
 ## Unified site
 
 - The bilingual portal `/` and `/fr/` lead to the existing Games portfolio (`/home`, `/fr/home`) or Simulation (`/simulation/`, `/fr/simulation/`).
-- Robotics lives at `/simulation/robotics/` and `/fr/simulation/robotics/`. The public Simulation content is adapted from the separate Breaking Walls .ca site's main and Robotics pages. The old React app is not deployed by this repository.
-- Edit the managed page copy in `tools/unify_site.py` and run `python3 tools/unify_site.py`. The existing translation command also regenerates those pages after refreshing the games translations.
+- `/simulation/` and `/simulation/robotics/` serve the checked-in Vite bundle built from the separate Breaking Walls simulation repository. The French routes remain managed static pages at `/fr/simulation/` and `/fr/simulation/robotics/`.
+- Edit the managed static page copy in `tools/unify_site.py` and run `python3 tools/unify_site.py`. The script intentionally preserves the English simulation bundle while regenerating the French simulation pages and the rest of the unified site.
 - Publish only `site/` on the new host, preserving existing Games, support, and press URLs. Once the unified .co site is live on HTTPS, configure permanent redirects for the former .ca website: `/` to `https://www.breakingwalls.co/simulation/`, and `/robotics` to `https://www.breakingwalls.co/simulation/robotics/`. Configure these at the .ca host, not in the .co site. Preserve .ca mail records, and do not redirect separate apps or subdomains as part of this change. The simulation contact still uses `info@breakingwalls.ca`.
 - Verify both locales, the old press/support URLs, the .ca redirects and the contact email after the host switch. The repo makes no DNS, hosting or mail changes.
 
